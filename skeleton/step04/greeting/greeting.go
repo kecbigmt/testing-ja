@@ -7,7 +7,8 @@ import (
 	// timeパッケージのインポート
 	"time"
 
-	// TODO: textパッケージのインポート
+	// textパッケージのインポート
+	"github.com/tenntenn/greeting/v2/text"
 )
 
 // デフォルトの言語
@@ -28,7 +29,8 @@ func Do() {
 		// text.GoodMorningを使う
 		fmt.Println(text.GoodMorning(lang))
 	case h >= 10 && h <= 16:
-		// TODO: text.Helloを使う
+		// text.Helloを使う
+		fmt.Println(text.Hello(lang))
 	default:
 		// text.GoodEveningを使う
 		fmt.Println(text.GoodEvening(lang))
